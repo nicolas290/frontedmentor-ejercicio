@@ -1,0 +1,102 @@
+:root {
+--cyan: hsl(179,62%,43%);
+--brightyellow:hsl(71,73%,54%)}
+--lightgray :hsl(204,43%,93);
+--grayishblue : hsl(218, 22%,67%)
+}
+
+body{
+font-size: 16px;
+font-family: "karla",sans-serif;
+margin : 0px;
+background : var(--lightgray);
+}
+
+.container{
+margin: 60px 16px 30px 16px;
+border-radius: 8px;
+box-shadow: 3px 3px 12px gray;
+
+}
+
+.header{
+padding: 20px;
+background : white;
+border-radius: 8px 8px 0px 0px;
+} 
+
+.header h1 {
+color: var(--cyan);
+}
+.header h3{
+color : var(--brightyellow);
+}
+
+.header p{
+color : var(--grayishblue);
+}
+
+.caja-left{
+background: var(--cyan);
+color : var(--lightgray);
+}
+
+.caja-left button{
+width: 100%;
+padding: 16px;
+background: var(--brightyellow);
+color : white;
+font-size: 16px;
+border : 0px;
+border-radius: 5px;
+box-shadow: 3px 3px 12 px grey;
+}
+
+.precio{
+display: flex;
+align-items: center;
+height: 40px;
+}
+
+.precio p{
+color: var(--grayishblue);
+margin-left: 10px;
+}
+
+.caja-right{
+background: hsl(179, 47%, 52%);
+padding: 20%;
+color : var(--lightgray);
+border-radius: 0px 0px 8px 8px;
+}
+
+/*version desktop*/
+@media screen and (min-width : 768px){
+.container{
+margin : 0px 100px 0px 100px;
+}
+}
+.todo{
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.footer{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.caja-right{
+border-radius: 0px 0px 8px 0px;
+}
+
+.caja-left{
+border-radius: 0px 0px 8px 0px;
+}
+
+
+
+
+
